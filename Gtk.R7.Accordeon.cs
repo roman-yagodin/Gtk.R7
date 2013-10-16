@@ -1,9 +1,9 @@
 //
 //  Gtk.R7.Accordeon.cs
 //
-//  Author:			Roman M. Yagodin <roman.yagodin@gmail.com>
-//  Version:		1.0.0
-//  Last-Modified:	2013/01/18
+//  Author: Roman M. Yagodin <roman.yagodin@gmail.com>
+//  Version: 1.0.0
+//  Last-Modified: 2013/01/18
 //
 //  Copyright (c) 2013 Roman M. Yagodin
 //
@@ -32,8 +32,8 @@ namespace Gtk.R7
 	/// then user activates (opens) one expander, others get closed automatically.
 	/// </summary>
 	/// <example>
-  /// using Gtk.R7;
-  /// ...
+ 	/// using Gtk.R7;
+	/// ...
 	/// class MainWindow : Gtk.Window 
 	/// {
 	/// 	  private Gtk.R7.Accordeon accordeon;
@@ -48,7 +48,7 @@ namespace Gtk.R7
 	///         
 	///         // activate first expander and close others
 	/// 		accordeon.CollapseAllBut (expander1);
-  ///     } 
+	///     } 
 	/// }
 	/// </example>		
 	public class Accordeon : IEnumerable<Expander>
