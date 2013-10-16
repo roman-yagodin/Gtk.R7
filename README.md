@@ -1,4 +1,4 @@
-gtksharp-snippets-r7
+gtksharp-r7-snippets
 ====================
 
 GTK# snippets - just a set of various source files which can be used by directly embedding 
