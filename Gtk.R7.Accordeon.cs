@@ -2,10 +2,10 @@
 //  Gtk.R7.Accordeon.cs
 //
 //  Author: Roman M. Yagodin <roman.yagodin@gmail.com>
-//  Version: 1.0.0
-//  Last-Modified: 2013/01/18
+//  Version: 1.0.1
+//  Last-Modified: 2014/02/24
 //
-//  Copyright (c) 2013 Roman M. Yagodin
+//  Copyright (c) 2013-2014 Roman M. Yagodin
 //
 //  This program is free software: you can redistribute it and/or modify
 //  it under the terms of the GNU Lesser General Public License as published by
