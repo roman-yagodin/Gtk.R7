@@ -36,7 +36,7 @@ namespace Gtk.R7
 	/// ...
 	/// class MainWindow : Gtk.Window 
 	/// {
-	/// 	  private Gtk.R7.Accordeon accordeon;
+	/// 	private Accordeon accordeon;
 	/// 
 	///     public MainWindow () : base(Gtk.WindowType.Toplevel) 
 	///     {
@@ -44,10 +44,10 @@ namespace Gtk.R7
 	///         ...
 	///         // assuming expander1, expander2, expander3 
 	///         // already created, by Stetic or manually
-	///         accordeon = new Gtk.Accordeon (expander1, expander2, expander3);
+	///         accordeon = new Accordeon (expander1, expander2, expander3);
 	///         
 	///         // activate first expander and close others
-	/// 		accordeon.CollapseAllBut (expander1);
+	///         accordeon.CollapseAllBut (expander1);
 	///     } 
 	/// }
 	/// </example>		
@@ -55,7 +55,7 @@ namespace Gtk.R7
 	{
 		/// <summary>
 		/// Expander list - protected for agreater good.
-		/// To guarantee that <see cref="Gtk.Accordeon"/> contains unique items, 
+		/// To guarantee that <see cref="Gtk.R7.Accordeon"/> contains unique items, 
 		/// using <see cref="System.Collection.Generic.SortedSet<T>" instead of
 		/// <see cref="System.Collection.Generic.List<T>" may be better, 
 		/// but this is not very important in general use cases
@@ -66,14 +66,14 @@ namespace Gtk.R7
 		protected List<Expander> Expanders { get; set; }
 
 		/// <summary>
-		/// Initializes a new instance of the <see cref="Gtk.Accordeon"/> class.
+		/// Initializes a new instance of the <see cref="Gtk.R7.Accordeon"/> class.
 		/// </summary>
 		public Accordeon ()
 		{
 		}
 
 		/// <summary>
-		/// Initializes a new instance of the <see cref="Gtk.Accordeon"/> class
+		/// Initializes a new instance of the <see cref="Gtk.R7.Accordeon"/> class
 		/// using parameter list of <see cref="Gtk.Expander" />'s
 		/// </summary>
 		/// <param name='expanders'>
@@ -88,7 +88,7 @@ namespace Gtk.R7
 
 		/// <summary>
 		/// Add the specified enumerable collection of <see cref="Gtk.Expander" />'s 
-		/// to <see cref="Gtk.Accordeon"/>
+		/// to <see cref="Gtk.R7.Accordeon"/>
 		/// </summary>
 		/// <param name='expanders'>
 		/// Expanders enumerable collection
@@ -101,7 +101,7 @@ namespace Gtk.R7
 		}
 
 		/// <summary>
-		/// Add the specified <see cref="Gtk.Expander" /> to <see cref="Gtk.Accordeon"/>
+		/// Add the specified <see cref="Gtk.Expander" /> to <see cref="Gtk.R7.Accordeon"/>
 		/// </summary>
 		/// <param name='expander'>
 		/// Expander reference to add
@@ -117,7 +117,7 @@ namespace Gtk.R7
 		}
 
 		/// <summary>
-		/// Remove the specified expander from <see cref="Gtk.Accordeon"/> 
+		/// Remove the specified expander from <see cref="Gtk.R7.Accordeon"/> 
 		/// </summary>
 		/// <param name='expander'>
 		/// Expander.
@@ -187,7 +187,7 @@ namespace Gtk.R7
 		}
 		
 		/// <summary>
-		/// Count of expanders in <see cref="Gtk.Accordeon"/>
+		/// Count of expanders in <see cref="Gtk.R7.Accordeon"/>
 		/// </summary>
 		public int Count
 		{
